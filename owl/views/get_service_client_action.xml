@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Client Action get_service -->
+    <record id="action_get_service_client" model="ir.actions.act_window">
+        <field name="name">Get Service</field>
+        <field name="tag">rick_morty.getService</field>
+        <field name="target">main</field>
+    </record>
+
+    <menuitem
+        id="menu_owl_root"
+        name="Rick and morty"
+        />
+    <menuitem
+        id="menu_get_services_menu"
+        name="Rick and Morty Api"
+        action="action_get_service_client"
+        parent="menu_owl_root"
+        sequence="10"/>
+
+</odoo>
